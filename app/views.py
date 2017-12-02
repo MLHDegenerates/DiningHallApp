@@ -53,6 +53,6 @@ def haadia():
     return render_template('Haadia.html')
 
 
-@app.route('/halls')
+@app.route('/Leonard')
 def halls():
-    return render_template("halls.html", halls=data.halls)
+    return render_template("Leonard.html")
