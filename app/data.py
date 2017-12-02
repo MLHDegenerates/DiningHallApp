@@ -115,7 +115,7 @@ halls = [
         "icon": icons["green"],
         "people": 0
     },
-{
+    {
         "Name": "Gord's Cafe",
         "lat": 44.223129,
         "lng": -76.500764,
