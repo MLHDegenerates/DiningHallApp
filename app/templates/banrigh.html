@@ -3,32 +3,43 @@
 <h1>Welcome to Ban Righ Dining Hall!</h1>
 <head>
     <style>
+    body {
+    background-color: #F06560;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    }
+
     h1 {
     text-align: center;
+    color: white
     }
+
     img {
     max-width:50%;
     position: relative;
     left: 25%
     }
+
     #menu {
     background-color: #1b998b;
-    border: 3px solid #000000;
+    border: 1px solid white;
+    border-radius: 15px;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 }
     </style>
 </head>
 
 <body>
 <div><img src="/static/BanRight.jpg"></div>
-    <div><a href="https://dining.queensu.ca/wp-content/uploads/2017/11/BRP3W5.htm">
-        <button id="menu">Check Menu</button>
-    </a>﻿
+    <div><a style="text-decoration:none;position:absolute;top:5px;right:5px" href="https://dining.queensu.ca/wp-content/uploads/2017/11/BRP4W1.htm">
+          <button id="menu">Check Menu</button>
+     </a>
 </div>
 </body>
 {% endblock %}
