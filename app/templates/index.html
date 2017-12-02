@@ -1,7 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Hi, {{ user.nickname }}!</h1>
-    {% for drink in drinks %}
-    <div><p>{{ drink.name }} is {{ drink.colour }}</p></div>
-    {% endfor %}
+
+    <style>
+
+        #checkIn{
+            background-color: #1b998b;
+            color: white;
+            padding: 16px;
+            font-size: 150px;
+            border: 3px solid black;
+            text-align: center;
+            border-radius: 75px;
+            padding: 50px 10px;
+            align: center;
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+
+        #checkIn:hover{
+
+            background-color: #0f6057;
+
+        }
+
+    </style>
+
+    <button id = "checkIn">Check In</buttonid>
 {% endblock %}
