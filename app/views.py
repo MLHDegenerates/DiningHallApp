@@ -15,10 +15,11 @@ def index():
             'colour':'purple'
         },
         {
-            'name':'Fanta',
+            'name':'Pop',
             'colour':'Orange'
         }
     ]
+    print("what is happening")
     return render_template('index.html', title='Home', user=user, drinks=drinks)
 
 
