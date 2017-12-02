@@ -21,7 +21,7 @@ def map():
         style="height:600px;width:600px;margin:0 auto"
     )
     print(data.people)
-    return render_template('map.html', mymap=myMap)
+    return render_template('checkOut.html', mymap=myMap)
 
 
 @app.route('/leonard')
