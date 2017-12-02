@@ -60,7 +60,8 @@
 {% extends "base.html" %}
 {% block content %}
 
+<a id="checkOut" href="{{ url_for('index') }}">Check Out</a>
+
 {{mymap.html}}
 
-<a id="checkOut" href="{{ url_for('index') }}">Check Out</a>
 {% endblock %}
