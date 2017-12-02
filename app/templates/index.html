@@ -12,6 +12,8 @@
     }
 
     #checkIn{
+        display:inline-block;
+        text-decoration:none;
         background-color: #1b998b;
         color: white;
         padding: 16px;
@@ -41,5 +43,6 @@
     }
 </style>
 <img id="bg" src="{{url_for('static',filename='background.jpg')}}">
-<button id="checkIn">Check In</button>
+<!--<button id="checkIn">Check In</button>-->
+<a id="checkIn" href="{{ url_for('map') }}">Check In</a>
 {% endblock %}

@@ -2,6 +2,10 @@ from app import app, data
 from flask import Flask, render_template
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map
+import geocoder
+
+g = geocoder.ip('me')
+print(g.latlng)
 
 
 @app.route('/')

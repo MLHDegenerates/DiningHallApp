@@ -1,6 +1,7 @@
 icons = {
     "green": "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-    "blue": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    "blue": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png",
+    "red": "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
 }
 halls = [
     {
@@ -125,6 +126,7 @@ halls = [
     }
 
 ]
+people = []
 lat = 44.226122
 lng = -76.495110
 
