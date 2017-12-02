@@ -14,5 +14,9 @@ def index():
             'name':'drank',
             'colour':'purple'
         }
+        {
+            'name':'Fanta',
+            'colour':'Orange'
+        }
     ]
     return render_template('index.html', title='Home', user=user, drinks=drinks)
