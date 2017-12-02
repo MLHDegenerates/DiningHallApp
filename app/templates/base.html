@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} - Dining Hall App</title>
+    {% else %}
+    <title>Dining Hall Yapp</title>
+    {% endif %}
+</head>
+<body>
+    <div>Dining Halls: <a href="/index">Home</a>  <a href="/dom">Dom</a></div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

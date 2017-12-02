@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% if title %}
-    <title>{{ title }} - guhuh</title>
-    {% else %}
-    <title>i <3 bananas</title>
-    {% endif %}
-</head>
-<body>
-    <h1>peace, {{ user.nickname }}!</h1>
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hi, {{ user.nickname }}!</h1>
     {% for drink in drinks %}
-    <div><p>{{ drink.name }} is <b>{{ drink.colour }}</b></p></div>
+    <div><p>{{ drink.name }} is {{ drink.colour }}</p></div>
     {% endfor %}
-</body>
-</html>
+{% endblock %}

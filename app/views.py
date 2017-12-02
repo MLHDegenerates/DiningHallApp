@@ -20,3 +20,8 @@ def index():
         }
     ]
     return render_template('index.html', title='Home', user=user, drinks=drinks)
+
+
+@app.route('/dom')
+def dom():
+    return render_template('dom.html')
