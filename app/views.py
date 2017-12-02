@@ -15,4 +15,4 @@ def index():
             'colour':'purple'
         }
     ]
-    return render_template('index.html', title='Home', user=user)
+    return render_template('index.html', title='Home', user=user, drinks=drinks)

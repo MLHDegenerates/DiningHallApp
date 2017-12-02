@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if title %}
     <title>{{ title }} - guhuh</title>
+    {% else %}
+    <title>yeet</title>
+    {% endif %}
 </head>
 <body>
     <h1>Hello, {{ user.nickname }}!</h1>
+    {% for drink in drinks %}
+    <div><p>{{ drink.name }} is <b>{{ drink.colour }}</b></p></div>
+    {% endfor %}
 </body>
 </html>
