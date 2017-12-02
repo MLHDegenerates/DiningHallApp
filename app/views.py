@@ -10,7 +10,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/dom')
+@app.route('/map')
 def map():
     myMap = Map(
         identifier="sndmap",
@@ -22,14 +22,14 @@ def map():
     )
     return render_template('map.html', mymap=myMap)
 
-@app.route('/Leonard')
-def Leonard():
+@app.route('/leonard')
+def leonard():
     return render_template("leonard.html")
 
-@app.route('/BanRigh')
-def BanRigh():
+@app.route('/banrigh')
+def banrigh():
     return render_template("banrigh.html")
 
-@app.route('/JeanRoyce')
-def JeanRoyce():
+@app.route('/jeanroyce')
+def jeanroyce():
     return render_template("jeanroyce.html")
