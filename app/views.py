@@ -22,13 +22,16 @@ def map():
     )
     return render_template('map.html', mymap=myMap)
 
+
 @app.route('/leonard')
 def leonard():
     return render_template("leonard.html")
 
+
 @app.route('/banrigh')
 def banrigh():
     return render_template("banrigh.html")
+
 
 @app.route('/jeanroyce')
 def jeanroyce():

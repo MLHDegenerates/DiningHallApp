@@ -1,6 +1,6 @@
 icons = {
-    "green":"http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-    "blue":"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    "green": "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+    "blue": "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
 }
 halls = [
     {
@@ -8,7 +8,7 @@ halls = [
         "lat": 44.224267,
         "lng": -76.500690,
         "infobox": "",
-        "icon": icons["green"],
+        "icon": icons["blue"],
         "people": 0
     },
     {
@@ -16,59 +16,51 @@ halls = [
         "lat": 44.224628,
         "lng": -76.496264,
         "infobox": "",
-        "icon": icons["green"],
+        "icon": icons["blue"],
         "people": 0
     },
     {
-        "Name":"Jean-Royce",
-        "lat":44.224243,
+        "name": "Jean-Royce",
+        "lat": 44.224243,
         "lng": -76.515335,
-        "infoBox":"",
-        "icon": icons["green"],
-        "people":0
+        "infoBox": "",
+        "icon": icons["blue"],
+        "people": 0
     },
     {
         "name": "Lazy Scholar",
         "lat": 44.225633,
         "lng": -76.498783,
-        "infobox":"",
-        "icon": icons["blue"],
+        "infobox": "",
+        "icon": icons["green"],
         "people": 0
     },
     {
-        "Name":"Location 21",
-        "lat":44.223575,
-        "lng":-76.498995,
-        "infoBox":"",
+        "name": "Location 21",
+        "lat": 44.223575,
+        "lng": -76.498995,
+        "infoBox": "",
         "icon": icons["green"],
-        "people":0
+        "people": 0
     },
     {
-        "Name":"The Arc",
-        "lat":44.229325,
-        "lng":-76.494231,
-        "infoBox":"",
+        "name": "The Arc",
+        "lat": 44.229325,
+        "lng": -76.494231,
+        "infoBox": "",
         "icon": icons["green"],
-        "people":0
+        "people": 0
     },
     {
-        "Name":"The JDUC",
-        "lat":44.228472,
-        "lng":-76.494675,
-        "infoBox":"",
+        "name": "The JDUC",
+        "lat": 44.228472,
+        "lng": -76.494675,
+        "infoBox": "",
         "icon": icons["green"],
-        "people":0
+        "people": 0
     },
     {
-        "Name":"Tim Horton's (BioSci)",
-        "lat":44.226444,
-        "lng": -76.491273,
-        "infoBox":"",
-        "icon": icons["green"],
-        "people":0
-    },
-    {
-        "Name": "Tim Horton's (BioSci)",
+        "name": "Tim Horton's (BioSci)",
         "lat": 44.226444,
         "lng": -76.491273,
         "infoBox": "",
@@ -76,7 +68,15 @@ halls = [
         "people": 0
     },
     {
-        "Name": "MC Square",
+        "name": "Tim Horton's (BioSci)",
+        "lat": 44.226444,
+        "lng": -76.491273,
+        "infoBox": "",
+        "icon": icons["green"],
+        "people": 0
+    },
+    {
+        "name": "MC Square",
         "lat": 44.226615,
         "lng": -76.497020,
         "infoBox": "",
@@ -84,7 +84,7 @@ halls = [
         "people": 0
     },
     {
-        "Name": "Market Street",
+        "name": "Market Street",
         "lat": 44.224566,
         "lng": -76.491620,
         "infoBox": "",
@@ -92,7 +92,7 @@ halls = [
         "people": 0
     },
     {
-        "Name": "Market Street",
+        "name": "Market Street",
         "lat": 44.224566,
         "lng": -76.491620,
         "infoBox": "",
@@ -100,7 +100,7 @@ halls = [
         "people": 0
     },
     {
-        "Name": "Recharge",
+        "name": "Recharge",
         "lat": 44.225394,
         "lng": -76.491291,
         "infoBox": "",
@@ -108,7 +108,7 @@ halls = [
         "people": 0
     },
     {
-        "Name": "Goodes Hall",
+        "name": "Goodes Hall",
         "lat": 44.228306,
         "lng": -76.497559,
         "infoBox": "",
@@ -116,7 +116,7 @@ halls = [
         "people": 0
     },
     {
-        "Name": "Gord's Cafe",
+        "name": "Gord's Cafe",
         "lat": 44.223129,
         "lng": -76.500764,
         "infoBox": "",
@@ -124,8 +124,9 @@ halls = [
         "people": 0
     }
 
-
 ]
 lat = 44.226122
 lng = -76.495110
 
+for p in halls:
+    p["infobox"] = p["name"]
