@@ -13,7 +13,7 @@ def index():
         {
             'name':'drank',
             'colour':'purple'
-        }
+        },
         {
             'name':'Fanta',
             'colour':'Orange'
