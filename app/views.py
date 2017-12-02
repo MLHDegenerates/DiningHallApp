@@ -53,6 +53,14 @@ def haadia():
     return render_template('Haadia.html')
 
 
-@app.route('/halls')
-def halls():
-    return render_template("halls.html", halls=data.halls)
+@app.route('/Leonard')
+def Leonard():
+    return render_template("Leonard.html")
+
+@app.route('/BanRight')
+def BanRight():
+    return render_template("BanRight.html")
+
+@app.route('/JeanRoyce')
+def JeanRoyce():
+    return render_template("JeanRoyce.html")

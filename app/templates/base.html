@@ -4,12 +4,13 @@
     <style>
 
     .dropbtn {
-        background-color: #4CAF50;
+        background-color: #425684;
         color: white;
         padding: 16px;
         font-size: 16px;
         border: none;
         cursor: pointer;
+        border-radius: 10px;
     }
 
     .dropdown {
@@ -42,31 +43,37 @@
     }
 
     .dropdown:hover .dropbtn {
-        background-color: #3e8e41;
+        background-color: #5974b2;
+    }
+
+    body{
+
+    }
+
+    #top{
+
+
+
     }
 
     </style>
     <meta charset="UTF-8">
-    {% if title %}
     <title>{{ title }} - Dining Hall App</title>
-    {% else %}
-    <title>Dining Hall Yapp</title>
-    {% endif %}
+
 </head>
 <body>
+<div id = "top">
 <div class="dropdown" id = navBar>
     <button class="dropbtn">Dining Halls</button>
     <div class="dropdown-content">
         <a href="/index">Home</a>
         <a href="/dom">Dom</a>
-        <a href="/ben"/>Ben</a>
-        <a href="/haadia">Haadia</a>
-        <a href="/val">Val</a>
-        <a href="/halls">Dining Hall Directory</a>
+        <a href="/Leonard">Leonard Hall</a>
+        <a href="/BanRight">Ban Righ Hall</a>
+        <a href="/JeanRoyce">Jean Royce Hall</a>
     </div>
 </div>
-<hr>
-
+</div>
 
 
 {% block content %}{% endblock %}
