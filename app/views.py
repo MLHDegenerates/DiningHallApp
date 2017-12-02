@@ -58,3 +58,11 @@ def dom():
 @app.route('/ben')
 def ben():
     return render_template('Ben.html')
+
+@app.route('/val')
+def val():
+    return render_template('Val.html')
+
+@app.route('/haadia')
+def haadia():
+    return render_template('Haadia.html')
