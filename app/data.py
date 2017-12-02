@@ -45,7 +45,7 @@ halls = [
         "people": 0
     },
     {
-        "name": "The Arc",
+        "name": "The ARC",
         "lat": 44.229325,
         "lng": -76.494231,
         "infoBox": "",
