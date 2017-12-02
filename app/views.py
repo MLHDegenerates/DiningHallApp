@@ -60,3 +60,7 @@ def Leonard():
 @app.route('/BanRight')
 def BanRight():
     return render_template("BanRight.html")
+
+@app.route('/JeanRoyce')
+def JeanRoyce():
+    return render_template("JeanRoyce.html")
