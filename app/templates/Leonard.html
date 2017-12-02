@@ -3,6 +3,10 @@
 <h1>Welcome to Leonard Hall!</h1>
 <head>
     <style>
+    body {
+    background-color: #F06560;
+    }
+
     h1 {
     text-align: center;
     }
@@ -11,9 +15,11 @@
     position: relative;
     left: 25%
     }
+
     #menu {
     background-color: #1b998b;
-    border: 3px solid #000000;
+    border: 1px solid white;
+    border-radius: 15px;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -26,9 +32,10 @@
 
 <body>
 <div><img src="/static/Lenn.jpg"></div>
-    <div><a href="https://dining.queensu.ca/wp-content/uploads/2017/11/LeoP3W5.htm">
-        <button id="menu">Check Menu</button>
-    </a>﻿
-</div>
+    <div>
+        <a style="text-decoration:none;position:absolute;top:5px;right:5px" href="https://dining.queensu.ca/wp-content/uploads/2017/11/LeoP3W5.htm">
+            <button id="menu">Check Menu</button>
+        </a>
+    </div>
 </body>
 {% endblock %}
