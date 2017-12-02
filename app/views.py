@@ -42,10 +42,17 @@ def dom():
 def ben():
     return render_template('Ben.html')
 
+
 @app.route('/val')
 def val():
     return render_template('Val.html')
 
+
 @app.route('/haadia')
 def haadia():
     return render_template('Haadia.html')
+
+
+@app.route('/halls')
+def halls():
+    return render_template("halls.html", halls=data.halls)
