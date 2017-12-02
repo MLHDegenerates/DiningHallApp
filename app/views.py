@@ -28,6 +28,13 @@ def index():
 def dom():
     return render_template('dom.html')
 
+@app.route('/haadia')
+def haadia():
+    return render_template('Haadia.html')
+
+@app.route('/val')
+def val():
+    return render_template('Val.html')
 
 @app.route('/ben')
 def ben():
