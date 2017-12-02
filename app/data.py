@@ -4,7 +4,7 @@ icons = {
 }
 halls = [
     {
-        "name": "Lenny",
+        "name": "Leonard Dining Hall",
         "lat": 44.224267,
         "lng": -76.500690,
         "infobox": "",
@@ -12,7 +12,7 @@ halls = [
         "people": 0
     },
     {
-        "name": "Ban Righ",
+        "name": "Ban Righ Dining Hall",
         "lat": 44.224628,
         "lng": -76.496264,
         "infobox": "",
@@ -20,7 +20,7 @@ halls = [
         "people": 0
     },
     {
-        "name": "Jean-Royce",
+        "name": "Jean-Royce Dining Hall",
         "lat": 44.224243,
         "lng": -76.515335,
         "infoBox": "",
