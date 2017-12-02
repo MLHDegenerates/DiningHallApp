@@ -54,5 +54,9 @@ def haadia():
 
 
 @app.route('/Leonard')
-def halls():
+def Leonard():
     return render_template("Leonard.html")
+
+@app.route('/BanRight')
+def BanRight():
+    return render_template("BanRight.html")
