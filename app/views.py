@@ -20,17 +20,12 @@ def dom():
         zoom=15,
         style="height:600px;width:600px;margin:0;"
     )
-    return render_template('dom.html', mymap=myMap)
+    return render_template('map.html', mymap=myMap)
 
 
 @app.route('/ben')
 def ben():
     return render_template('Ben.html')
-
-
-@app.route('/val')
-def val():
-    return render_template('Val.html')
 
 
 @app.route('/haadia')
