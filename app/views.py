@@ -35,3 +35,6 @@ def ben():
 @app.route('/val')
 def val():
     return render_template('Val.html')
+@app.route('/haadia')
+def haadia():
+    return render_template('haadia.html')
