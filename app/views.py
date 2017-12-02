@@ -2,10 +2,6 @@ from app import app, data
 from flask import Flask, render_template
 from flask_googlemaps import GoogleMaps
 from flask_googlemaps import Map
-import geocoder
-
-g = geocoder.ip('me')
-print(g.latlng)
 
 
 @app.route('/')
@@ -17,13 +13,14 @@ def index():
 @app.route('/map')
 def map():
     myMap = Map(
-        identifier="sndmap",
+        identifier="map",
         lat=data.lat,
         lng=data.lng,
         markers=data.halls,
-        zoom=15,
-        style="height:600px;width:600px;margin:0 auto;"
+        zoom=16,
+        style="height:600px;width:600px;margin:0 auto"
     )
+    print(data.people)
     return render_template('map.html', mymap=myMap)
 
 

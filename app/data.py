@@ -126,6 +126,18 @@ halls = [
     }
 
 ]
+
+
+def addPerson(latlng):
+    people.append({
+        "name": "",
+        "lat": latlng[0],
+        "lng": latlng[1],
+        "infobox": "",
+        "icon": icons["blue"],
+    })
+
+
 people = []
 lat = 44.226122
 lng = -76.495110
