@@ -11,7 +11,7 @@ def index():
 
 
 @app.route('/dom')
-def dom():
+def map():
     myMap = Map(
         identifier="sndmap",
         lat=data.lat,
@@ -22,25 +22,14 @@ def dom():
     )
     return render_template('map.html', mymap=myMap)
 
-
-@app.route('/ben')
-def ben():
-    return render_template('Ben.html')
-
-
-@app.route('/haadia')
-def haadia():
-    return render_template('Haadia.html')
-
-
 @app.route('/Leonard')
 def Leonard():
-    return render_template("Leonard.html")
+    return render_template("leonard.html")
 
-@app.route('/BanRight')
-def BanRight():
-    return render_template("BanRight.html")
+@app.route('/BanRigh')
+def BanRigh():
+    return render_template("banrigh.html")
 
 @app.route('/JeanRoyce')
 def JeanRoyce():
-    return render_template("JeanRoyce.html")
+    return render_template("jeanroyce.html")
