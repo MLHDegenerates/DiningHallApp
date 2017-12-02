@@ -122,7 +122,7 @@ halls = [
         "infoBox": "",
         "icon": icons["green"],
         "people": 0
-    },
+    }
 
 
 ]
