@@ -19,4 +19,5 @@ def index():
             'colour':'Orange'
         }
     ]
+    print("what is happening")
     return render_template('index.html', title='Home', user=user, drinks=drinks)
