@@ -49,3 +49,7 @@ def val():
 @app.route('/haadia')
 def haadia():
     return render_template('Haadia.html')
+
+@app.route('/Leonard')
+def Leonard():
+    return render_template('Leonard.html')
