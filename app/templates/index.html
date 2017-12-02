@@ -42,8 +42,50 @@
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
 
     }
+
 </style>
+
+<script>
+        var pos = {
+            lat:0,
+            lng: 0
+            }
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+            console.log(pos)
+                 var baseurl = "{{ url_for('map') }}"
+      document.getElementById("checkIn").href=baseurl+"/"+pos.lat+"/"+pos.lng
+
+            <!--infoWindow.setPosition(pos);-->
+            <!--infoWindow.setContent('Location found.');-->
+            <!--infoWindow.open(map);-->
+            <!--map.setCenter(pos);-->
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+
+
+</script>
 <img id="bg" src="{{url_for('static',filename='background.jpg')}}">
 <!--<button id="checkIn">Check In</button>-->
-<a id="checkIn" href="{{ url_for('map') }}">Check In</a>
+<a id="checkIn"  href="#">Check In</a>
 {% endblock %}
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>

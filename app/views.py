@@ -10,13 +10,16 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/map')
-def map():
+@app.route("/map")
+@app.route('/map/<lat>/<lng>')
+def map(lat=-1,lng=-1):
+    if not lng == -1:
+        data.addPerson((lat,lng))
     myMap = Map(
         identifier="map",
         lat=data.lat,
         lng=data.lng,
-        markers=data.halls,
+        markers=data.people,
         zoom=16,
         style="height:600px;width:600px;margin:0 auto"
     )
