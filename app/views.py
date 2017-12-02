@@ -15,7 +15,7 @@ def index():
             'colour':'purple'
         },
         {
-            'name':'Fanta',
+            'name':'Pop',
             'colour':'Orange'
         }
     ]
