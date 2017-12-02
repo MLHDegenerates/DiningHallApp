@@ -1,4 +1,5 @@
 from flask import render_template
+from flask_googlemaps import Map
 from app import app
 
 
@@ -32,10 +33,16 @@ def dom():
 def ben():
     return render_template('Ben.html')
 
-@app.route('/val')
-def val():
-    return render_template('Val.html')
+@app.route('/map')
+def map():
+    return render_template('map.html')
 
-@app.route('/haadia')
-def haadia():
-    return render_template('haadia.html')
+@app.route('/')
+def mapview():
+    mymap = Map(
+        identifier="view-side",
+        lat=37.4419,
+        lng=-122.1419,
+        markers=[(37.4419, -122.1419)]
+    )
+    return render_template('mymap.html', mymap=mymap)
