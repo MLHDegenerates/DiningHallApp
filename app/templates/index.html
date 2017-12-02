@@ -60,15 +60,10 @@
                  var baseurl = "{{ url_for('map') }}"
       document.getElementById("checkIn").href=baseurl+"/"+pos.lat+"/"+pos.lng
 
-            <!--infoWindow.setPosition(pos);-->
-            <!--infoWindow.setContent('Location found.');-->
-            <!--infoWindow.open(map);-->
-            <!--map.setCenter(pos);-->
           }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
           });
         } else {
-          // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
 
@@ -83,7 +78,6 @@
 
 </script>
 <img id="bg" src="{{url_for('static',filename='background.jpg')}}">
-<!--<button id="checkIn">Check In</button>-->
 <a id="checkIn"  href="#">Check In</a>
 {% endblock %}
 <script async defer

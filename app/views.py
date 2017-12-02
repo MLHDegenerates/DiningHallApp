@@ -23,8 +23,7 @@ def map(lat=-1,lng=-1):
         zoom=16,
         style="height:600px;width:600px;margin:0 auto"
     )
-    print(data.people)
-    return render_template('checkOut.html', mymap=myMap)
+    return render_template('map.html', mymap=myMap)
 
 
 @app.route('/leonard')
@@ -40,3 +39,15 @@ def banrigh():
 @app.route('/jeanroyce')
 def jeanroyce():
     return render_template("jeanroyce.html")
+
+@app.route("/places")
+def places():
+    myMap = Map(
+        identifier="map",
+        lat=data.lat,
+        lng=data.lng,
+        markers=data.halls ,
+        zoom=16,
+        style="height:600px;width:600px;margin:0 auto"
+    )
+    return render_template("places.html", mymap=myMap)
