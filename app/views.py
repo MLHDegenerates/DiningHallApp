@@ -32,7 +32,8 @@ def dom():
         lat=data.lat,
         lng=data.lng,
         markers=data.halls,
-        zoom=15
+        zoom=15,
+        style="height:600px;width:600px;margin:0;"
     )
     return render_template('dom.html', mymap=myMap)
 
