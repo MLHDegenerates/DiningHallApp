@@ -22,7 +22,7 @@ def map():
         lng=data.lng,
         markers=data.halls,
         zoom=15,
-        style="height:600px;width:600px;margin:0;"
+        style="height:600px;width:600px;margin:0 auto;"
     )
     return render_template('map.html', mymap=myMap)
 
