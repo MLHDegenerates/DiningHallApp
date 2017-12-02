@@ -51,6 +51,11 @@
         cursor: pointer;
     }
     </style>
+    <script>
+        window.onload = function() {
+            document.getElementById("checkOut").href="{{ url_for("index") }}/" + window.location.pathname.substring(5)
+        }
+    </script>
 </head>
 {% extends "base.html" %}
 {% block content %}

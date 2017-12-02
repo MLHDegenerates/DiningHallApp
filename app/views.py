@@ -6,7 +6,10 @@ from flask_googlemaps import Map
 
 @app.route('/')
 @app.route('/index')
-def index():
+@app.route('/index/<lat>/<lng>')
+def index(lat=-1,lng=-1):
+    if not lng == -1:
+        data.remove(lat, lng)
     return render_template('index.html')
 
 

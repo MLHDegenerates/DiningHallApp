@@ -137,6 +137,11 @@ def addPerson(latlng):
         "icon": icons["blue"],
     })
 
+def remove(lat,lng):
+    for v in people:
+        if v["lat"] == lat and v["lng"] == lng:
+            people.remove(v)
+            break;
 
 people = []
 lat = 44.226122
